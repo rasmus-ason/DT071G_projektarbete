@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlagQuiz.Pages.ManageFlagQuizPage"
+             Title="ManageFlagQuizPage"
+            
+             >
+
+    
+    
+    <VerticalStackLayout
+        BackgroundColor="LightGray"
+        >
+
+        <Button
+            Text="Quit"
+            Clicked="ClickedQuit"
+            Margin="5"
+            BackgroundColor="Red"
+            TextColor="Black"
+            FontSize="16"
+            HorizontalOptions="End"
+        />
+
+        <Label 
+            x:Name="QuestionNumberInsert"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Padding="30"
+            FontSize="28"
+            TextColor="IndianRed"/>
+
+
+
+        <Image  x:Name="FlagImage"
+                Grid.Column="0"
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                Margin="15"
+                WidthRequest="300"
+                VerticalOptions="Center"></Image>
+
+
+
+        <Button
+            x:Name="C0"
+            Clicked="ClickedCountry0"
+            Margin="5"
+            BackgroundColor="LightSeaGreen"
+            WidthRequest="230"
+            TextColor="Black"
+            FontSize="16"
+        />
+        <Button
+            x:Name="C1"
+            Clicked="ClickedCountry1"
+            Margin="5"
+            BackgroundColor="LightSeaGreen"
+            WidthRequest="230"
+            TextColor="Black"
+            FontSize="16"
+        />
+        <Button
+            x:Name="C2"
+            Clicked="ClickedCountry2"
+            Margin="5"
+            BackgroundColor="LightSeaGreen"
+            WidthRequest="230"
+            TextColor="Black"
+            FontSize="16"
+        />
+        <Button
+            x:Name="C3"
+            Clicked="ClickedCountry3"
+            Margin="5"
+            BackgroundColor="LightSeaGreen"
+            WidthRequest="230"
+            TextColor="Black"
+            FontSize="16"
+        />
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
