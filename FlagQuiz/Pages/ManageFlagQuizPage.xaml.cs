@@ -149,10 +149,10 @@ public partial class ManageFlagQuizPage : ContentPage
                 countryCodeAlternativeArray[k] = countryCodeArray[indexCountries];
 
                 //Display country on unique button
-                if (k == 0) { C0.Text = countriesArray[indexCountries];
-                if (k == 1) { C1.Text = countriesArray[indexCountries];
-                if (k == 2) { C2.Text = countriesArray[indexCountries];
-                if (k == 3) { C3.Text = countriesArray[indexCountries];
+                if (k == 0) { C0.Text = countriesArray[indexCountries]; };
+                if (k == 1) { C1.Text = countriesArray[indexCountries]; };
+                if (k == 2) { C2.Text = countriesArray[indexCountries]; };
+                if (k == 3) { C3.Text = countriesArray[indexCountries]; };
 
 
             }
@@ -167,7 +167,7 @@ public partial class ManageFlagQuizPage : ContentPage
             answer.answer = theAnswer;
 
             //Get index of correct coutry from full country array
-            int v = Array.FindIndex(countriesArray, x => x.Contains(answer.answer));
+            //int v = Array.FindIndex(countriesArray, x => x.Contains(answer.answer));
 
             //Store the correct country code
             correctcountrycode.correctcountrycode = countryCodeAlternativeArray[c];

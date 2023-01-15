@@ -10,15 +10,10 @@ namespace FlagQuiz;
 public partial class MainPage : ContentPage
 {
 
-    private readonly IRestDataService _dataService;
-
-	//Skapa en instans av classen IRestDataService, ger den namnet dataService
-    public MainPage(IRestDataService dataService)
+    public MainPage()
 	{
-		InitializeComponent();
 
-		//Apply it to a readonly instance
-		_dataService = dataService;
+		InitializeComponent();
 
 	}
 
@@ -27,15 +22,7 @@ public partial class MainPage : ContentPage
     {
         Debug.WriteLine("----> Start Quiz Button Clicked");
 
-        //Add navigation parameter, definerar data som kan skickas till the target page
-        var navigationParameter = new Dictionary<string, object>()
-        {
-            //Specify the string, send a new Flags object
-            { nameof(Flags), new Flags() }
-        };
-
-        //Pass it to the selected page, pass with the navigationParameter
-        await Shell.Current.GoToAsync(nameof(ManageFlagQuizPage), navigationParameter);
+        await Shell.Current.GoToAsync(nameof(ManageFlagQuizPage));
 
     }
 

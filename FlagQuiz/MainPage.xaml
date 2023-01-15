@@ -16,24 +16,23 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Image  Source="homepageimage.png"
-                Grid.Column="0"
-                Grid.Row="1"
-                Grid.ColumnSpan="2"
-                Margin="10"
-                WidthRequest="300"
-                HeightRequest="300"
-                VerticalOptions="Center"></Image>
-
-
+        <Image  
+            Source="homepageimage.png"
+            Grid.Column="0"
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+            Margin="10"
+            WidthRequest="300"
+            HeightRequest="300"
+            VerticalOptions="Center">
+        </Image>
 
         <Button
             Text="Let's get started!"
             Clicked="OnClickedToQuizPage"
             Margin="30"
             BackgroundColor="IndianRed"
-            WidthRequest="230"
-            
+            WidthRequest="230"   
         />
       
 

@@ -40,7 +40,7 @@ public partial class ManageResultPage : ContentPage
                 DisplayResultToUser.Text = "Flags aren't your strong side or you just got some tricky ones! But still " + res + " correct answers!";
             }
             //If user quitted
-            if (userResultAnswer > 99)
+            if (userResultAnswer == 999)
             {
                 DisplayResultToUser.Text = "No Worries, you can finish the test another time!";
             }
@@ -59,22 +59,14 @@ public partial class ManageResultPage : ContentPage
     async void OnClickedToQuizPage(object sender, EventArgs e)
     {
 
-        //Add navigation parameter, definerar data som kan skickas till the target page
-        var navigationParameter = new Dictionary<string, object>()
-        {
-            //Specify the string, send a new Flags object
-            { nameof(Flags), new Flags() }
-        };
-
-        //Pass it to the selected page, pass with the navigationParameter
-        await Shell.Current.GoToAsync(nameof(ManageFlagQuizPage), navigationParameter);
+           await Shell.Current.GoToAsync(nameof(ManageFlagQuizPage));
 
     }
 
     async void ToStartPage(object sender, EventArgs e)
     {
-        await Shell.Current.Navigation.PopToRootAsync();
 
+        await Shell.Current.Navigation.PopToRootAsync();
 
     }
 
