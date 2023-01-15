@@ -17,7 +17,6 @@ public static class MauiProgram
 			});
 
 		//Om någån gör en req på IRestDataService, ger vi dom RestDataService
-		//Kallas dependency injection
 		builder.Services.AddSingleton<IRestDataService, RestDataService>();
 
 		//Registera MainPage
